@@ -41,15 +41,11 @@ public:
                 l2 = l2->next;
             }
         }
-        while (l1) {
+        if (l1) {
             p->next = l1;
-            p = l1;
-            l1 = l1->next;
         }
-        while (l2) {
+        if (l2) {
             p->next = l2;
-            p = l2;
-            l2 = l2->next;
         }
         return head;
     }
