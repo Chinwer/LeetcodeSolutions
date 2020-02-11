@@ -16,11 +16,16 @@ using namespace std;
 class Solution {
 public:
   bool isMajorityElement(vector<int> &nums, int target) {
-      int cnt = 0;
+      // int cnt = 0;
+      // int size = nums.size();
+      // for (int num : nums) {
+      //     cnt += (num == target) ? 1 : 0;
+      // }
+      // return cnt > size / 2;
       int size = nums.size();
-      for (int num : nums) {
-          cnt += (num == target) ? 1 : 0;
+      if (!size) {
+          return false;
       }
-      return cnt > size / 2;
+      return nums[(size - 1) / 2] == target;
   }
 };
