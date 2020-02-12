@@ -1,0 +1,7 @@
+#+TITLE: Leetcode Notes
+
+* Pascal's triangle algorithm
+
+* Boyer-Mooyre voting algorithm (169)
+
+* xor algorithm (268, 136, 389)
