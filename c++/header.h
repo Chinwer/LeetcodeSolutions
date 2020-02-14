@@ -2,6 +2,7 @@
 #define __HEADER_H_
 
 #include <map>
+#include <set>
 #include <vector>
 #include <string>
 #include <iostream>
