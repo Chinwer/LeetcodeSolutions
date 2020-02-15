@@ -5,3 +5,4 @@
 - xor algorithm (268, 136, 389)
 - Sliding window (1176)
 - Double Pointer (167, 1099)
+- In-place Algorithm (905, 922)
