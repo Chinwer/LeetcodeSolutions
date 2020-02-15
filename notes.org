@@ -1,8 +1,7 @@
 #+TITLE: Leetcode Notes
 
-* Pascal's triangle algorithm
-
-* Boyer-Mooyre voting algorithm (169)
-
-* xor algorithm (268, 136, 389)
-* Sliding window (1176)
+- Pascal's triangle algorithm
+- Boyer-Mooyre voting algorithm (169)
+- xor algorithm (268, 136, 389)
+- Sliding window (1176)
+- Double Pointer (167, 1099)
