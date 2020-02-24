@@ -7,9 +7,6 @@
 #include "header.h"
 
 class Solution {
-    private:
-        map<int, int> cnt;
-
     public:
         vector<vector<int>> permuteUnique(vector<int>& nums) {
             vector<vector<int>> res;
@@ -22,6 +19,7 @@ class Solution {
             if (start == n) {
                 res.push_back(nums);
             } else {
+                map<int, int> cnt;
                 for (int i = start; i < n; i++) {
                     if (!cnt[nums[i]]) {
                         swap(nums[i], nums[start]);
