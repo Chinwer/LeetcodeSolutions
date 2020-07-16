@@ -38,4 +38,4 @@ class Solution {
             int right_bound = interval1[1] >= interval2[1] ? interval1[1] : interval2[1];
             return vector<int>{interval1[0], right_bound};
         }
-}
+};
