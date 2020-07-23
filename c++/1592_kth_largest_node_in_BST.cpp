@@ -13,7 +13,7 @@ struct TreeNode {
 
 class Solution {
     private:
-        int res, cnt = 1;
+        int res, cnt;
 
     public:
         int kthLargest(TreeNode* root, int k) {
