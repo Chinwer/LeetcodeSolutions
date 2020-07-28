@@ -21,11 +21,31 @@
 class Solution {
     public:
         bool stoneGame(vector<int>& piles) {
+            // return solution1(piles);
+            return solution2(piles);
+        }
+
+        bool solution2(vector<int> &piles) {
+            int n = piles.size();
+            // dp[i][j] means the maximum difference between
+            // the score of the first hand and second hand
+            vector<vector<int>> dp(n, vector(n, 0));
+            for (int i = 0; i < n; i++) {
+                dp[i][i] = piles[i];
+            }
+            for (int i = n - 2; i >= 0; i--) {
+                for (int j = i + 1; j < n; j++) {
+                    dp[i][j] = max(piles[i] - dp[i + 1][j], piles[j] - dp[i][j - 1]);
+                }
+            }
+            return dp[0][n - 1] > 0;
+        }
+
+        bool solution1(vector<int> &piles) {
             int n = piles.size();
             vector<vector<pair<int, int>>> dp(n, vector(n, pair(0, 0)));
             for (int i = 0; i < n; i++) {
                 dp[i][i].first = piles[i];
-                dp[i][i].second = 0;
             }
             for (int i = n - 2; i >= 0; i--) {
                 for (int j = i + 1; j < n; j++) {
