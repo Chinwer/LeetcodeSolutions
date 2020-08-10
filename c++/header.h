@@ -9,6 +9,7 @@
 #include <vector>
 #include <string>
 #include <climits>
+#include <numeric>
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
